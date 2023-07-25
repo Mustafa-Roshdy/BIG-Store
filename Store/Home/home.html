@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Store | Home page</title>
+    <link rel="icon" href="../../images/wallpaper/icon.png">
+    <link rel="stylesheet" href="../store.css">
+    <link rel="stylesheet" href="./homeSize.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="navbar">
+            <h1>BIG store!</h1>
+            <ul id="first">
+                <li><a href="#" id="home">HOME</a></li>
+                <li><a href="../Watches/watches.html" id="watches">WATCHES</a></li>
+                <li><a href="../Gaming/gaming.html" id="gaming">GAMING M.</a></li>
+                <li><a href="../Fitness/fitness.html" id="Fitness">FITNESS</a></li>
+                <li><a href="../About/about.html" id="about1">ABOUT</a></li>
+                <li><a href="../../Login & SignUp/Login/login.html" id="logout">LOG OUT</a></li>
+            </ul>
+            <h6 onclick="showNavbar()" id="h6">COLLECTION</h6>
+        </div>
+
+        <div id="navbarBottom">
+                <a href="#">HOME</a>
+                <a href="../Watches/watches.html">WATCHES</a>
+                <a href="../Gaming/gaming.html">GAMING M.</a>
+                <a href="../Fitness/fitness.html">FITNESS</a>
+                <a href="../About/about.html">ABOUT</a>
+                <a href="../../Login & SignUp/Login/login.html" id="logout">LOG OUT</a>
+            </ul>
+        </div>
+
+        <div class="slider" id="slider">
+            <img id="pic" src="../../images/slideBar/meta-store.png">
+            <h2>WELCOME TO OUR STORE</h2>
+        </div>
+
+        <div class="main" id="main">
+
+        </div>
+
+    </div>
+    <script>
+        var request=new XMLHttpRequest();
+
+        var container=document.getElementById("main")
+
+        request.onreadystatechange=function(){
+            if(request.readyState==4 && request.status==200){
+                var response=JSON.parse(request.responseText);                
+                for(var i=0;i < response.length;i++){
+                    var insideContainer=document.createElement("div")
+                    insideContainer.innerHTML=`
+                    <img class="img" src="${response[i]["image"]}" >
+                    <p>${response[i]["title"]}</p>
+                    <h3>${response[i]["price"]} EGP</h3>
+                    <button type="button">ADD TO CART</button>
+                    `;
+                    container.append(insideContainer)
+                }
+            }else{
+                
+            }
+        }
+        request.open("get","https://fakestoreapi.com/products",true)
+        request.send()
+    </script>
+    <script src="../script.js"></script>
+</body>
+</html>

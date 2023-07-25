@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Store | Sign Up page </title>
+    <link rel="icon" href="../../images/wallpaper/icon.png">
+    <link rel="stylesheet" href="../sign.css">
+    <link rel="stylesheet" href="../size.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="left">
+            <h1>Sign Up!</h1>
+            <form action="../../Store/Home/home.html" method="post">
+                <input id="name" type="text" placeholder="Username" name="username" onblur="outPut()" required>
+                <input id="email" type="email" placeholder="Email" name="email" onblur="outEmail()" required>
+                <input id="pass" type="password" placeholder="Password" name="password" required>
+                <div>
+                <label>Male</label>
+                <input type="radio" name="gender" value="male" checked>
+                <label>Female</label>
+                <input type="radio" name="gender" value="female">
+                </div>
+                <input type="submit" value="SIGN UP">
+                <a href="../Login/login.html">Already have an account?</a>
+            </form>
+        </div>
+
+        <div class="right">
+            <h2>BIG Store</h2>
+            <img src="../../images/wallpaper/banner2.jpg" alt="big store img">
+        </div>
+    </div>
+    <script src="../name.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+#gaming{
+    color: rgb(2, 2, 78);
+    background-color: azure;
+    border-bottom:3px rgb(210, 4, 4) solid ;
+}
+@media (max-width:1180px) {
+    #first{
+        display: none;
+    }
+    #h6{
+        display: block;
+    }
+    .navbar{
+        justify-content: space-between;
+    }
+    #h6:hover{
+        border-radius: 30px;
+    }
+}
+@media (max-width:500px) {
+    h1{
+        font-size:20px ;
+    }
+    h6{
+        font-size: 13px;
+    }
+    .navbar{
+        height: 1cm;
+    }
+    h6:hover{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .slider{
+        margin-top: 70px;
+    }
+    h2{
+        font-size: 20px;
+        bottom: 120px;
+    }
+}

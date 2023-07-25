@@ -1,0 +1,182 @@
+body{
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(62, 14, 114));
+
+}
+.container{
+    width:95%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.navbar ul{
+    list-style:none;
+    display: flex;
+    font-size: 25px;  
+}
+.navbar a{
+    text-decoration: none;
+    color: azure;
+    padding:20px;
+}
+#logout{
+    color: rgb(226, 17, 17);   
+}
+#logout:hover{
+    color: rgb(251, 247, 247);
+    background-color:rgb(226, 17, 17) ; 
+}
+a:hover,h6:hover{
+    background-color: rgb(94, 9, 73);
+}
+h1{
+    font-size: 40px;
+    color:rgb(214, 183, 10);
+    margin-left: 10px;
+}
+h6{
+    display: none;
+    color: azure;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 25px;
+}
+.navbar{
+    display: flex;
+    background-color: rgb(29, 5, 91);
+    height: 70px;
+    align-items: center;
+    border-radius: 30px;
+    position: fixed;
+    top: 0;
+    margin-top: 10px;
+    width: 94%;
+}
+#navbarBottom{
+    display: none;
+    width: 100%;
+    margin-top: 90px;
+    background-color: rgb(60, 60, 61);
+    overflow-y: auto;
+    height: 5cm;
+    border-radius: 30px;
+}
+#navbarBottom a{   
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    border-bottom:3px black solid ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+#pic{
+    border-radius: 30px;
+}
+.slider{
+    margin-top: 90px;
+    position: relative;
+    height: 8cm;
+    width: 100%;
+}
+h2{
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    color:rgb(234, 118, 11);
+    font-size: 300%;
+    
+}
+#main{
+    border-radius: 30px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    background-color: rgb(247, 237, 237);
+}
+#main div{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+#main p{
+    font-size: larger;
+}
+#main div *{ 
+   margin-left: 10px;
+}
+#main img{
+    width: 280px;
+    height: 200px;
+    margin-top: 10px;
+}
+h3{
+    margin-top: 20px;
+    font-size: 22px;
+    color: rgb(2, 2, 78);
+    font-weight: bolder;
+}
+button{
+    width: 280px;
+    height: 30px;
+    margin-top: 10px;
+    font-size: larger;
+    font-weight: bolder;
+    border: 2px green solid;
+    background-color: rgb(8, 117, 8);
+    color: beige;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+button:hover ,.left button:hover{
+    background-color: rgb(2, 2, 104);
+    border:3px  rgb(2, 2, 104) solid ;
+}
+.top{
+    position: relative;
+    border-radius: 30px;
+    margin-top: 90px;
+    width: 100%;
+    height: auto;
+    background-color: rgb(207, 206, 206);
+}
+#about{
+    border-radius: 30px;
+    height: 100%;
+}
+.right{
+    width: 100%;
+    height: 16cm;
+     
+}
+.left{
+    position: absolute;
+    top: 10px;
+    left: 1cm;
+    width: 7cm;
+}
+.left h4{
+    font-size: 40px;
+    color: rgb(2, 2, 104);
+    border-bottom:3px  rgb(2, 2, 104) solid ;
+}
+.left button{
+    background-color: orangered;
+    border:3px   orangered solid ;
+    box-shadow: 7px 7px 7px black;
+}
