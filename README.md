@@ -1,4 +1,4 @@
-# Project Name
+# BIG Store
 
 Welcome to the Store Project README!
 
